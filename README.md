@@ -35,8 +35,6 @@ ARD_vs_MCMC="ARD"
 attn_mode="s"
 Quantity="Cor"
 activation_fn="relu"
-embedding_var_formatted=$(printf "%.1f" $embedding_var)
-d_model_formatted=$(printf "%.0f" "$d_model")
 
 | Argument               | Example                     |Description                                                                                               
 | `N`                    | `20`                        | Number of spins (sites) in the chain                                                                                  |
@@ -81,5 +79,3 @@ modulusOnOrOff="off"
 signOfProbsIntoPhase="off"
 attn_mode="s"
 activation_fn="relu"
-embedding_var_formatted=$(printf "%.2f" $embedding_var)
-d_model_formatted=$(printf "%.0f" "$d_model")
