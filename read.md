@@ -1,10 +1,13 @@
-# 🧠 Transformer Wavefunction for Quantum Spin Systems
+# RandomATF_Entanglement_VMC
+Code for calculating properties (entanglement and otherwise) of random ATF wavefunctions, as well as to perform VMC.
 
-This part implements a ATF to model the wavefunction of quantum spin chains. It supports a variety of configurations including attention modes, activation functions, and sampling strategies. The model allows evaluation of Renyi entanglement entropy, spin-spin correlation functions, and the Schmidt spectrum.
+# 🧠 Random Autogressive Transformer (ATF) Wavefunctions for Quantum Spin Systems
+
+This part implements an ATF to model the wavefunction of a quantum spin chain. It supports a variety of hyperparameters including attention modes, activation functions, and sampling strategies. The model allows evaluation of Renyi entanglement entropy, spin-spin correlation functions, and the Schmidt spectrum (eigenvalues of reduced density matrices).
 
 ---
 
-## How to Run Random ATF states
+## How to Run calculations of static properties for random ATF states
 
 Use the following `srun` command to execute the script on a single GPU node:
 
@@ -56,7 +59,7 @@ d_model_formatted=$(printf "%.0f" "$d_model")
 
 
 
-## How to Run VMC 
+## How to Run VMC optimizations on our ATF wavefunctions
 
 Use the following `srun` command to execute the script on a 4 GPUs node:
 
